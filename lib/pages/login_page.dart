@@ -3,10 +3,6 @@ import 'package:get/get.dart';
 import 'package:routing_flutter/pages/controller/login_controller.dart';
 import 'package:routing_flutter/pages/home_page.dart';
 
-///
-/// Created by Sunil Kumar
-/// On 29-04-2023 11:24 pm
-///
 class LoginPage extends GetResponsiveView<LoginController> {
   static const routeName = '/login';
   static String getPath(String? redirectUrl) =>

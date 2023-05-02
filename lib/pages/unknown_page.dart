@@ -1,13 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class UnknownPage extends StatelessWidget {
-  static const String routeName = '/unknown';
-  const UnknownPage({Key? key}) : super(key: key);
+class UnknownPage extends GetResponsiveView {
+  static const routeName = '/404';
+  static const pathName = '/dashboard/404';
+
+  UnknownPage({super.key});
+  @override
+  Widget? desktop() {
+    return Scaffold(
+      body: Center(child: Text("404")),
+    );
+  }
 
   @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text("Unknown page")),
+  Widget? phone() {
+    return Scaffold(
+      body: Center(child: Text("404")),
     );
+  }
+
+  @override
+  Widget? tablet() {
+    return phone();
   }
 }

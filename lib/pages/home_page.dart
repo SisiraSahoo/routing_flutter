@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 import 'package:routing_flutter/pages/controller/home_controller.dart';
 
 class HomePage extends GetResponsiveView<HomeController> {
-  static const routeName = '/dashboard';
-  static const pathName = '/home/dashboard';
+  static const routeName = '/home';
+  static const pathName = '/dashboard/home';
 
   HomePage({super.key});
   @override

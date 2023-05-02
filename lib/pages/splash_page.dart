@@ -2,10 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:routing_flutter/pages/dashboard_pages.dart';
 
-///
-/// Created by Sunil Kumar
-/// On 29-04-2023 11:24 pm
-///
 class SplashPage extends GetResponsiveView {
   static const routeName = '/';
 

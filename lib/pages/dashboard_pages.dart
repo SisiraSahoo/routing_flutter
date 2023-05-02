@@ -41,10 +41,10 @@ class DashboardPage extends GetResponsiveView<DashboardController> {
                       case 1:
                         delegate.toNamed(ExplorePage.routeName);
                         break;
-                      case 1:
+                      case 2:
                         delegate.toNamed(SettingsPage.routeName);
                         break;
-                      case 2:
+                      case 3:
                         delegate.toNamed(ProfilePage.routeName);
                         break;
                       default:

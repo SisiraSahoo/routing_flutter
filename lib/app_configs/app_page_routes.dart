@@ -14,7 +14,7 @@ import 'package:routing_flutter/utils/auth_middleware.dart';
 class AppPageRoutes {
   static final unknownRoute = GetPage(
       name: UnknownPage.routeName,
-      page: () => const UnknownPage(),
+      page: () => UnknownPage(),
       participatesInRootNavigator: true,
       preventDuplicates: true);
   static final routes = [
@@ -25,6 +25,11 @@ class AppPageRoutes {
         preventDuplicates: true,
         transition: Transition.noTransition,
         children: [
+          GetPage(
+              name: SettingsPage.routeName,
+              page: () => SettingsPage(),
+              participatesInRootNavigator: true,
+              preventDuplicates: true),
           GetPage(
             name: LoginPage.routeName,
             page: () => LoginPage(),
@@ -48,25 +53,20 @@ class AppPageRoutes {
               ],
               children: [
                 GetPage(
-                  name: SettingsPage.routeName,
-                  page: () => SettingsPage(),
-                  participatesInRootNavigator: true,
-                ),
-                GetPage(
                   name: HomePage.routeName,
                   page: () => HomePage(),
                   binding: HomeBinding(),
-                  participatesInRootNavigator: true,
+                  participatesInRootNavigator: false,
                 ),
                 GetPage(
                   name: ExplorePage.routeName,
                   page: () => ExplorePage(),
-                  participatesInRootNavigator: true,
+                  participatesInRootNavigator: false,
                 ),
                 GetPage(
                   name: ProfilePage.routeName,
                   page: () => ProfilePage(),
-                  participatesInRootNavigator: true,
+                  participatesInRootNavigator: false,
                 ),
               ]),
         ]),

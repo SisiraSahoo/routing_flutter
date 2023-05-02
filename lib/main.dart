@@ -13,14 +13,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp.router(
+    return GetMaterialApp(
       title: 'Routing',
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
       getPages: AppPageRoutes.routes,
       unknownRoute: AppPageRoutes.unknownRoute,
-      routeInformationParser:
-          GetInformationParser(initialRoute: DashboardPage.routeName),
       defaultTransition: Transition.fade,
     );
   }

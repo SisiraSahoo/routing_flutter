@@ -4,7 +4,7 @@ import 'package:routing_flutter/pages/controller/home_controller.dart';
 
 class ExplorePage extends GetResponsiveView<HomeController> {
   static const routeName = '/explore';
-  static const pathName = '/home/explore';
+  static const pathName = '/dashboard/explore';
 
   ExplorePage({super.key});
   @override

@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 
 class SettingsPage extends GetResponsiveView {
   static const routeName = '/settings';
-  static const pathName = '/home/settings';
 
   SettingsPage({super.key});
 
